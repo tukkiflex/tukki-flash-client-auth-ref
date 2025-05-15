@@ -52,11 +52,14 @@ CREATE DATABASE tukki;
 
 ### 4. Configurer l'app
 
-Dans `app.py`, remplace la ligne suivante par tes propres identifiants :
+copier le fichier `.env.example` en `.env` et remplir les variables d'environnement.
 
-```python
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://<user>:<password>@localhost:5432/tukki'
+```bash
+cp .env.example .env
 ```
+
+ajoute les variables d'environnement au fichier `.env` .
+
 
 ### 5. Lancer le serveur
 
