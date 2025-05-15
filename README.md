@@ -32,7 +32,7 @@ Le code est généré, stocké et affiché dans la console (pas encore d'envoi r
 ### 1. Cloner le repo
 
 ```bash
-git clone https://github.com/ton-projet/flash-auth-api.git
+git clone https://github.com/tukkiflex/tukki-flash-client-auth-ref
 cd flash-auth-api
 ````
 
@@ -185,11 +185,3 @@ curl -X POST http://localhost:5000/auth/request-code \
 ## 🧑‍💻 Auteur
 
 Mouhameth Lamotte
-
----
-
-## ⚖️ Licence
-
-MIT
-
----
