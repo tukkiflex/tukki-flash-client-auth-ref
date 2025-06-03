@@ -12,3 +12,7 @@ services:
         - ./logs:/app/logs
       networks:
         - api-network
+
+networks:
+  api-network:
+    external: true
