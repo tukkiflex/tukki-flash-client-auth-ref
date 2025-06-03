@@ -87,7 +87,7 @@ def request_code():
     db.session.commit()
 
     print(f"[SMS] Code for {phone}: {code}")
-    return jsonify({"message": "Code sent"}), 200
+    return jsonify({"message": "Code sent", "code" : code}), 200
 
 # 2. Vérifier le code
 @app.route('/auth/verify-code', methods=['POST'])
