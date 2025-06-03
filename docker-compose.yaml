@@ -12,7 +12,3 @@ services:
         - ./logs:/app/logs
       networks:
         - api-network
-
-networks:
-  api-network:
-    driver: bridge
