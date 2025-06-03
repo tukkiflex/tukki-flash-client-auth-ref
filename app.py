@@ -39,7 +39,7 @@ def token_required(f):
 app = Flask(__name__)
 
 # CONFIG
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:lamotte@localhost:5432/tukki"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:lamotte@postgres:5432/tukki"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'super-secret'  # Change in production
 
