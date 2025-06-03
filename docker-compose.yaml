@@ -1,0 +1,18 @@
+services:
+  app:
+      build: .
+      container_name: flask_app
+      restart: unless-stopped
+      expose:
+        - 5000
+      environment:
+        - FLASK_ENV=production
+        - PYTHONPATH=/app
+      volumes:
+        - ./logs:/app/logs
+      networks:
+        - api-network
+
+networks:
+  api-network:
+    driver: bridge
